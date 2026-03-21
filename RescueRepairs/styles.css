@@ -1,16 +1,38 @@
 body {
-    font-family: sans-serif;
+    font-family: sans-serif;  /* Easier to read and more dyslexia friendly font */
+    /* background-color: rgb(255, 255, 255); */
 }
 
 .navbar-links {
     display: flex;  /* Scales for device type */
     justify-content: center;  /* Aligns text to centre */
-    gap: 20px;  /* Small gap between  */
-    font-size: 125%;
+    gap: 20px;  /* Small gap between */
+    font-size: 140%; /* Bigger font size for people who find reading smaller text hard */
+    background-color: rgb(225, 225, 225);
 }
 
 .title {
     display: flex;
     justify-content: center;
-    font-weight: bold;
+}
+
+footer {
+    position: fixed;  /* Footer stays right at bottom, had an issue where it moved depending on if there was text or not without it */
+    bottom: 0;  /* Fixed at bottom */
+    width: 100%;  /* Scales to device width */
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 140%;
+}
+
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 100%;
 }
