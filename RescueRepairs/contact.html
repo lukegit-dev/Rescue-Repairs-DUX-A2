@@ -5,10 +5,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p class="title">Rescue Repairs</p>
+    <h1 class="title">Rescue Repairs</h1>
     <p class="navbar-links">
         <a href="home.html">Home</a>
         <a href="services.html">Upgrades & Repairs</a>
         <a href="contact.html">Contact Us</a>
     </p>
-</body> 
+    <form class="contact-form">
+        <h2>Contact Us</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+        <label for="text">Describe your query:</label><br>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<footer class="navbar-links">
+    <p>© 2026 Rescue Repairs<br><br>
+        Email: <a href="mailto:enquiries@rescuerepairs.com">enquiries@rescuerepairs.com</a>
+        Tel: <a href="tel:0777 777 7777">0777 777 7777</a>
+    </p>
+</footer>
