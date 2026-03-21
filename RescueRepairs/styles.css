@@ -6,14 +6,11 @@ body {
     display: flex;  /* Scales for device type */
     justify-content: center;  /* Aligns text to centre */
     gap: 20px;  /* Small gap between  */
-    
     font-size: 125%;
 }
 
 .title {
     display: flex;
     justify-content: center;
-    
     font-weight: bold;
-    font-size: 150%;
 }
