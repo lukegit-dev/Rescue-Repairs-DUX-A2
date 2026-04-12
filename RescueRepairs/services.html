@@ -11,6 +11,75 @@
         <a href="services.html">Upgrades & Repairs</a>
         <a href="contact.html">Contact Us</a>
     </p>
+    <h2 class="title">Upgrades & Repairs</h2>
+
+    <form class="contact-form">
+        <label for="service">Select Service:</label>
+        <select required id="service" name="service" onchange="upgradeAndRepairOptions()">
+            <option value="">-- Choose an option --</option>
+            <option value="upgrade">Upgrade</option>
+            <option value="repair">Repair</option>
+        </select>
+        <br>
+        <label for="category">Select Category:</label>
+        <select required id="category" name="category">
+            <option value="">-- Select service --</option>
+        </select>
+        <br>
+        <label for="device">Device Type:</label>
+        <select id="device" name="device">
+            <option>Laptop</option>
+            <option>Desktop</option>
+            <option>Phone / Tablet</option>
+            <option>Other</option>
+        </select>
+        <br>
+        <label for="details">Describe the issue:</label>
+        <textarea id="details" name="details" rows="5" placeholder="Provide as much detail as possible so we can help you with your request..."></textarea>
+        <br>
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <script>
+    function upgradeAndRepairOptions() {
+        const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
+        const category = document.getElementById("category");  // Find which category they picked
+
+        category.innerHTML = ""  // if they change their mind to a different service category, overwrite previous text
+
+        let options = [];
+
+        if (service === "upgrade") {
+            options = [
+                "SSD Upgrade",
+                "RAM Upgrade",
+                "Graphics Card Upgrade",
+                "Software Installation",
+                "Operating System Upgrade",
+                "Other"
+            ];
+        } else if (service === "repair") {
+            options = [
+                "Monitor Issue",
+                "Battery Replacement",
+                "Charging Port Repair",
+                "Keyboard Issue",
+                "Virus / Malware Removal",
+                "Overheating",
+                "Other"
+            ];
+        }
+
+        // Cycles through each option in options table
+        options.forEach(option => {
+            let opt = document.createElement("option");  // Gets the option chosen option
+            opt.value = option;  // Sets chosen option value
+            opt.innerHTML = option;  // Displays chosen option
+            category.appendChild(opt);
+            
+        });
+    }
+    </script>
 </body>
 <footer class="navbar-links">
     <p>© 2026 Rescue Repairs<br><br>
