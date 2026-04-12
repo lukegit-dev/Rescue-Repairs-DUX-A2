@@ -16,6 +16,24 @@ body {
     justify-content: center;
 }
 
+.mainText {
+    font-size: 125%;
+}
+
+h3 {  /* Larger h3 font used in upgrades & repairs */
+    font-size: 135%;
+}
+
+.about-box {
+    background-color: rgb(240,240,255);  /* Background colour for box, slightly blue to match foreground colour below */
+    border-left: 5px solid rgb(0, 100, 255); /* Nice blue colour */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem;  /* Slightly larger text for readability */
+    line-height: 1.6;  /* Spacing between text lines */
+}
+
 footer {
     position: fixed;  /* Footer stays right at bottom, had an issue where it moved depending on if there was text or not without it */
     bottom: 0;  /* Fixed at bottom */
@@ -25,14 +43,44 @@ footer {
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    display: flex;  /* Scales for device type */
+    flex-direction: column;  /* So it stacks */
     align-items: center;
     font-size: 140%;
+    width: 100%;
 }
 
+.contact-form label {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.contact-form input,
 .contact-form textarea {
     width: 50%;
     padding: 10px;
     font-size: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);  /* Solid black outline to stand out */
+}
+
+.contact-form select, /* Any styles found below will be applied to the contact form which are selections / options */
+.contact-form button {  /* In Upgrade & Repairs section for formatting the button */
+    width: 50%; /* of screen */
+    padding: 10px; /* Size */
+    font-size: 100%;
+    margin-bottom: 10px; /* how spaced out it is from the bottom */
+}
+
+.contact-form button {
+    background-color: rgb(0, 100, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {  /* Mouse hover */
+    background-color: rgb(0, 80, 255);
 }
