@@ -24,11 +24,12 @@ h3 {  /* Larger h3 font used in upgrades & repairs */
     font-size: 135%;
 }
 
-.about-box {
+.box {
     background-color: rgb(240,240,255);  /* Background colour for box, slightly blue to match foreground colour below */
     border-left: 5px solid rgb(0, 100, 255); /* Nice blue colour */
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 70%;    /* Limits width so it doesn't stretch across screen */
     border-radius: 8px; /* Rounded corners */
     font-size: 1.2rem;  /* Slightly larger text for readability */
     line-height: 1.6;  /* Spacing between text lines */
