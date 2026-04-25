@@ -25,7 +25,26 @@ For Upgrade & Repair options test:
 3. Different categories can be listed - Added `<option></option>` tag where each different option is listed within each category when a service is selected.
 ### Automated
 #### W3C HTML Validator
-Coming soon...
+Previously, I had a couple errors via the HTML Validator shown below. The new git commit fixes are labelled to show this. 
+<img src="images/W3C%20HTML%20Validator.png" alt="HTML Validator"></img>
+For `<html>` tags at the top of my HTML files, I will include `lang="en"` so browsers and screen readers know what language the page is in to avoid getting wrong pronounciations ([validatehtml.com](https://validatehtml.com/blog/common-html-errors), 2026).
+#### Google Lighthouse
+Here are meaningful images on a Google Lighthouse Analysis I ran, shown below.
+<img src="images/Google%20Lighthouse.png" alt="Google Lighthouse Review"></img>
+
+Insights:
+
+<img src="images/Google%20Lighthouse%20NDT.png" alt="Google Lighthouse Review"></img>
+<img src="images/Google%20Lighthouse%20Cache%20%26%20Render.png" alt="Google Lighthouse Review"></img>
+
+Accessiblity:
+
+<img src="images/Google%20Lighthouse%20Accessibility%20Landmark.png" alt="Google Lighthouse Review"></img>
+
+SEO:
+
+<img src="images/Google%20Lighthouse%20SEO%20Meta%20description.png" alt="Google Lighthouse Review"></img>
 
 As of now, no bugs remain unsolved.
 ### User stories (bugs & fixes)
+Coming soon...
