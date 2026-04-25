@@ -19,4 +19,13 @@ On the Home page, I designed boxes with clear titles, and relevant text. The Upg
 ### Deployment Page
 ## Testing
 ### Manual Testing
+For Upgrade & Repair options test:
+1. The form can be submitted empty. I used a `required` tag to make sure all form boxes are filled in
+2. The form category changes when a different service is selected. This issue was found and fixed before the commit, where I did not clear the innerHTML of the previously chosen option, causing this bug. The fix now shows the default category option for "Upgrade" being SSD Upgrade, and switching service to "Repair" changes the category to Monitor issue.
+3. Different categories can be listed - Added `<option></option>` tag where each different option is listed within each category when a service is selected.
+### Automated
+#### W3C HTML Validator
+Coming soon...
+
+As of now, no bugs remain unsolved.
 ### User stories (bugs & fixes)
