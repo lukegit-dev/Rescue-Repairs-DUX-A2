@@ -1,96 +1,98 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1 class="title">Rescue Repairs</h1>
-    <p class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Upgrades & Repairs</a>
-        <a href="contact.html">Contact Us</a>
-    </p>
-    <h2 class="title">Upgrades & Repairs</h2>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="title">Rescue Repairs</h1>
+        <p class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Upgrades & Repairs</a>
+            <a href="contact.html">Contact Us</a>
+        </p>
+        <h2 class="title">Upgrades & Repairs</h2>
 
-    <form class="contact-form">
-        <label for="service">Select Service:</label>
-        <select required id="service" name="service" onchange="upgradeAndRepairOptions()">
-            <option value="">-- Choose an option --</option>
-            <option value="upgrade">Upgrade</option>
-            <option value="repair">Repair</option>
-        </select>
-        <br>
-        <label for="category">Select Category:</label>
-        <select required id="category" name="category">
-            <option value="">-- Select service --</option>
-        </select>
-        <br>
-        <label for="device">Device Type:</label>
-        <select id="device" name="device">
-            <option>Laptop</option>
-            <option>Desktop</option>
-            <option>Phone / Tablet</option>
-            <option>Other</option>
-        </select>
-        <br>
-        <label for="serviceType">Service Type:</label>
-        <select id="serviceType" name="serviceType">
-            <option>Standard: 3-5 working days</option>
-            <option>Fast Track: 1-2 working days</option>
-        </select>
-        <br>
-        <label for="details">How can we help with your request?</label>
-        <textarea id="details" name="details" rows="5" placeholder="Anything specific / relevant to your request that would help us assist you..."></textarea>
-        <br>
-        <button type="submit">Submit Request</button>
-        
-    </form>
-    <br><br><br><br><br><br><br><br><br><br>
-    <script>
-    function upgradeAndRepairOptions() {
-        const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
-        const category = document.getElementById("category");  // Find which category they picked
-
-        category.innerHTML = ""  // if they change their mind to a different service category, overwrite previous text
-
-        let options = [];
-
-        if (service === "upgrade") {
-            options = [
-                "SSD Upgrade",
-                "RAM Upgrade",
-                "Graphics Card Upgrade",
-                "Software Installation",
-                "Operating System Upgrade",
-                "Other"
-            ];
-        } else if (service === "repair") {
-            options = [
-                "Monitor Issue",
-                "Battery Replacement",
-                "Charging Port Repair",
-                "Keyboard Issue",
-                "Virus / Malware Removal",
-                "Overheating",
-                "Other"
-            ];
-        }
-
-        // Cycles through each option in options table
-        options.forEach(option => {
-            let opt = document.createElement("option");  // Gets the option chosen option
-            opt.value = option;  // Sets chosen option value
-            opt.innerHTML = option;  // Displays chosen option
-            category.appendChild(opt);
+        <form class="contact-form">
+            <label for="service">Select Service:</label>
+            <select required id="service" name="service" onchange="upgradeAndRepairOptions()">
+                <option value="">-- Choose an option --</option>
+                <option value="upgrade">Upgrade</option>
+                <option value="repair">Repair</option>
+            </select>
+            <br>
+            <label for="category">Select Category:</label>
+            <select required id="category" name="category">
+                <option value="">-- Select service --</option>
+            </select>
+            <br>
+            <label for="device">Device Type:</label>
+            <select id="device" name="device">
+                <option>Laptop</option>
+                <option>Desktop</option>
+                <option>Phone / Tablet</option>
+                <option>Other</option>
+            </select>
+            <br>
+            <label for="serviceType">Service Type:</label>
+            <select id="serviceType" name="serviceType">
+                <option>Standard: 3-5 working days</option>
+                <option>Fast Track: 1-2 working days</option>
+            </select>
+            <br>
+            <label for="details">How can we help with your request?</label>
+            <textarea id="details" name="details" rows="5" placeholder="Anything specific / relevant to your request that would help us assist you..."></textarea>
+            <br>
+            <button type="submit">Submit Request</button>
             
-        });
-    }
-    </script>
-</body>
-<footer class="navbar-links">
-    <p>© 2026 Rescue Repairs<br><br>
-        Email: <a href="mailto:enquiries@rescuerepairs.com">enquiries@rescuerepairs.com</a>
-        Tel: <a href="tel:0777 777 7777">0777 777 7777</a>
-    </p>
-</footer>
+        </form>
+        <br><br><br><br><br><br><br><br><br><br>
+        <script>
+        function upgradeAndRepairOptions() {
+            const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
+            const category = document.getElementById("category");  // Find which category they picked
+
+            category.innerHTML = ""  // if they change their mind to a different service category, overwrite previous text
+
+            let options = [];
+
+            if (service === "upgrade") {
+                options = [
+                    "SSD Upgrade",
+                    "RAM Upgrade",
+                    "Graphics Card Upgrade",
+                    "Software Installation",
+                    "Operating System Upgrade",
+                    "Other"
+                ];
+            } else if (service === "repair") {
+                options = [
+                    "Monitor Issue",
+                    "Battery Replacement",
+                    "Charging Port Repair",
+                    "Keyboard Issue",
+                    "Virus / Malware Removal",
+                    "Overheating",
+                    "Other"
+                ];
+            }
+
+            // Cycles through each option in options table
+            options.forEach(option => {
+                let opt = document.createElement("option");  // Gets the option chosen option
+                opt.value = option;  // Sets chosen option value
+                opt.innerHTML = option;  // Displays chosen option
+                category.appendChild(opt);
+                
+            });
+        }
+        </script>
+    </body>
+    <footer class="navbar-links">
+        <p>© 2026 Rescue Repairs<br><br>
+            Email: <a href="mailto:enquiries@rescuerepairs.com">enquiries@rescuerepairs.com</a>
+            Tel: <a href="tel:0777 777 7777">0777 777 7777</a>
+        </p>
+    </footer>
+</html>
