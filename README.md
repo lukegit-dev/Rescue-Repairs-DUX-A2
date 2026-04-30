@@ -2,6 +2,8 @@
 ## Design
 ### Aims & Objectives
 The aim of Rescue Repairs is to give customers a reliable service when they need to upgrade or repair a system they have. The site is designed to be user-friendly with clear and easy navigation throuhout the site.
+### Initial design
+I decided I would create a simple looking website in line with the user stories with great accessibility on navigating the site and reading easily.
 ### Revised Wireframes
 1. The home page design was revised to show a box containing the text of who Rescue Repairs are, and their goals, compared to just having text in the centre of the screen and being Lorum Ipsum.
 2. For wireframe images 2 and 3, they displayed a search field for each component for you to upgrade, and a second page for repairs with a drop down menu. I combined both to avoid confusion with drop down categories instead of a search feature as I included a request text box where the customer can include any relevant information they would like to add to their new system / fixed.
@@ -76,3 +78,19 @@ Background: Working as a full-time software developer manager, Millie relies on 
 Criteria: Headings for scheduling a repair, pricing, and a phone number. A form to fill out should contain necessary information (name, address, card information, etc..), and an appointment day and time (e.g. same-day repair or DD/MM/YYYY @ 12:30), along with a mobile number at the footer if they prefer to call (which may suit Millie better considering her urgency).
 
 **Requirements Met?** Yes. Hyperlinks were added in the home page boxes, along with the navigation bars at the top to make it easy for Millie to access contact forms. Additionally, the form is not complex, has a clean layout, and a footer page at the end of the website is always visible with a phone number she could click and call.
+# References
+Reference listmozilla.org (2024). What are hyperlinks? - Learn web development | MDN. [online] MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_are_hyperlinks.
+
+Randomblue (2011). CSS: center element within a element. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/6810031/css-center-element-within-a-div-element.W3Schools (2019).
+
+HTML Startup. [online] W3schools.com. Available at: https://www.w3schools.com/TAgs/tag_html.asp.W3Schools (2020).
+
+HTML Colors. [online] W3schools.com. Available at: https://www.w3schools.com/html/html_colors.asp.W3Schools (2023a).
+
+HTML Forms. [online] W3schools.com. Available at: https://www.w3schools.com/html/html_forms.asp.W3Schools (2023b).
+
+HTML Responsive Web Design. [online] W3schools.com. Available at: https://www.w3schools.com/html/html_responsive.asp.W3schools (2019).
+
+Learning CSS Basics. [online] W3schools.com. Available at: https://www.w3schools.com/Css/css_intro.asp.w3schools (2019).
+
+Window alert() Method. [online] W3schools.com. Available at: https://www.w3schools.com/jsref/met_win_alert.asp.
