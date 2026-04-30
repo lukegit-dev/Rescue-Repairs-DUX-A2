@@ -17,7 +17,7 @@
     <div style="display: flex; justify-content: center">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.7504923372217!2d-0.14446492283975634!3d51.50136397181202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e1!3m2!1sen!2suk!4v1776934964581!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-        <form class="contact-form">
+        <form class="contact-form" id="contact">
             <h2>Contact Us</h2>
             <label for="fname">First Name:</label>
             <input required type="text" id="fname" name="fname">
@@ -32,7 +32,8 @@
             <br><button type="submit" id="submit">Submit</button>
         </form>
         <script>
-            document.getElementById("submit").addEventListener("click", function () {
+            // Show an alert message when the form is filled in
+            document.getElementById("contact").addEventListener("submit", function () {
                 alert("Thank you for submitting. We will get back to you as soon as possible.")
             });
         </script>

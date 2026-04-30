@@ -15,7 +15,7 @@
         </p>
         <h2 class="title">Upgrades & Repairs</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="serviceForm">
             <label for="service">Select Service:</label>
             <select required id="service" name="service" onchange="upgradeAndRepairOptions()">
                 <option value="">-- Choose an option --</option>
@@ -50,49 +50,49 @@
         </form>
         <br><br><br><br><br><br><br><br><br><br>
         <script>
-        
-        document.getElementById("submit").addEventListener("click", function () {
-            alert("Thank you for submitting. We will get back to you as soon as possible.")
-        });
-
-        function upgradeAndRepairOptions() {
-            const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
-            const category = document.getElementById("category");  // Find which category they picked
-
-            category.innerHTML = ""  // if they change their mind to a different service category, overwrite previous text
-
-            let options = [];
-
-            if (service === "upgrade") {
-                options = [
-                    "SSD Upgrade",
-                    "RAM Upgrade",
-                    "Graphics Card Upgrade",
-                    "Software Installation",
-                    "Operating System Upgrade",
-                    "Other"
-                ];
-            } else if (service === "repair") {
-                options = [
-                    "Monitor Issue",
-                    "Battery Replacement",
-                    "Charging Port Repair",
-                    "Keyboard Issue",
-                    "Virus / Malware Removal",
-                    "Overheating",
-                    "Other"
-                ];
-            }
-
-            // Cycles through each option in options table
-            options.forEach(option => {
-                let opt = document.createElement("option");  // Gets the option chosen option
-                opt.value = option;  // Sets chosen option value
-                opt.innerHTML = option;  // Displays chosen option
-                category.appendChild(opt);
-                
+            
+            // Show an alert message when the form is filled in
+            document.getElementById("serviceForm").addEventListener("submit", function () {
+                alert("Thank you for submitting. We will get back to you as soon as possible.")
             });
-        }
+
+            function upgradeAndRepairOptions() {
+                const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
+                const category = document.getElementById("category");  // Find which category they picked
+
+                category.innerHTML = ""  // if they change their mind to a different service category, overwrite previous text
+
+                let options = [];
+
+                if (service === "upgrade") {
+                    options = [
+                        "SSD Upgrade",
+                        "RAM Upgrade",
+                        "Graphics Card Upgrade",
+                        "Software Installation",
+                        "Operating System Upgrade",
+                        "Other"
+                    ];
+                } else if (service === "repair") {
+                    options = [
+                        "Monitor Issue",
+                        "Battery Replacement",
+                        "Charging Port Repair",
+                        "Keyboard Issue",
+                        "Virus / Malware Removal",
+                        "Overheating",
+                        "Other"
+                    ];
+                }
+
+                // Cycles through each option in options table
+                options.forEach(option => {
+                    let opt = document.createElement("option");  // Gets the option chosen option
+                    opt.value = option;  // Sets chosen option value
+                    opt.innerHTML = option;  // Displays chosen option
+                    category.appendChild(opt);
+                });
+            }
         </script>
     </body>
     <footer class="navbar-links">
