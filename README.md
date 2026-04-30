@@ -48,19 +48,31 @@ SEO:
 As of now, no bugs remain unsolved.
 ### Revised User Stories
 Name: Jay
+
 Group: Frequent visitor.
+
 Background: Being a Youtuber, Jay works with video and audio software such as Adobe Premiere to create his videos. Since birth, having dyslexia has made it tricky for him to read words. Because of this, he prefers having 1-to-1 conversations with people which he does by livestreaming, calling his friends, and going out a lot. Story: As a frequent visitor, I want to find their mobile number quickly so I can talk about preinstalled software on my custom-built PC they made for me, so that I get real-time feedback and can solve problems and queries quicker. Tasks: Navigate to the general customer support page.
+
 Criteria: Given that Jay is dyslexic and prefers speaking than texting, needs to find the mobile number of our company when he needs PC support, then should add a mobile number at the footer of our page in a dyslexia-friendly font like sans-serif.
+
 **Requirements Met?** Yes. Added criteria described.
 
 Name: Chad
+
 Group: First-time customer.
+
 Background: Chad works as a graphics designer using tools like Photoshop (What Does a Graphic Designer Do? (And How to Become One) | Coursera). He is good at designing logos and adverts, but can get easily overwhelmed when having long, technical instructions to follow. He is a visual learner and prefers step-by-step instructions and likes working independently. Story: As a first-time customer, I want to quickly seek what upgrade options are available as my PC is running slower having used it for multiple years. I want to feel confident when choosing what to upgrade as I know they can be expensive. Tasks: Navigate to the PC parts picker page.
+
 Criteria: Given that Chad is a visual learner, our page should have a clear category tree for easy navigation. On the page, we can have text boxes to search for PC specification parts which are compatible with his current build, along with a part (replace) installation guide consisting of clear, concise, step-by-step instructions with images on how to do so.
+
 **Requirements Met?** Yes. Clear navigation through obvious titles and forms, coloured boxes for information on home page gives the user something to focus more on.
 
 Name: Millie
+
 Group: Returning visitor.
+
 Background: Working as a full-time software developer manager, Millie relies on her PC for meetings, programming, and supporting others with remote access tools. With busy deadlines and managing others, she strives to be efficient at her job, and hates waiting around. Story: As a returning visitor, I want to quickly repair my PC as I need it for my remote work, I cannot wait hours so want a same day repair, and am willing to pay them extra for it. Tasks: Navigate to the booking scheduler / PC repair page with a phone number she can ring.
+
 Criteria: Headings for scheduling a repair, pricing, and a phone number. A form to fill out should contain necessary information (name, address, card information, etc..), and an appointment day and time (e.g. same-day repair or DD/MM/YYYY @ 12:30), along with a mobile number at the footer if they prefer to call (which may suit Millie better considering her urgency).
+
 **Requirements Met?** Yes. Hyperlinks were added in the home page boxes, along with the navigation bars at the top to make it easy for Millie to access contact forms. Additionally, the form is not complex, has a clean layout, and a footer page at the end of the website is always visible with a phone number she could click and call.
