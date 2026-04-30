@@ -43,13 +43,18 @@
             </select>
             <br>
             <label for="details">How can we help with your request?</label>
-            <textarea id="details" name="details" rows="5" placeholder="Anything specific / relevant to your request that would help us assist you..."></textarea>
+            <textarea id="details" name="details" rows="5" placeholder="Anything specific / relevant to your request that would help us assist you... Please leave us your contact information for us to get back to you."></textarea>
             <br>
-            <button type="submit">Submit Request</button>
+            <button type="submit" id="submit">Submit Request</button>
             
         </form>
         <br><br><br><br><br><br><br><br><br><br>
         <script>
+        
+        document.getElementById("submit").addEventListener("click", function () {
+            alert("Thank you for submitting. We will get back to you as soon as possible.")
+        });
+
         function upgradeAndRepairOptions() {
             const service = document.getElementById("service").value; // Find the value of the chosen service (upgrade / repair)
             const category = document.getElementById("category");  // Find which category they picked
